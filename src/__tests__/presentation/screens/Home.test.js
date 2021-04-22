@@ -5,7 +5,7 @@ import {MockedProvider} from '@apollo/client/testing';
 import {GET_PARTICIPANTS} from '../../../data/queries';
 
 describe('Home screen', () => {
-  it('Can click on a participant', async () => {
+  it('can list each participant', async () => {
     /*TODO TASK 07*/
     const results = [{name: 'Rick Sanchez'}, {name: 'Morty Smith'}];
 
