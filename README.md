@@ -17,7 +17,7 @@ Rename the title of the Home screen component from "Home" to "Participants".
 
 Comments: 
 
-### Task 02
+### TASK 02
 Add the CorLife logo (located in assets/images/splash.png) to the Splash screen component - make sure the image is centered horizontally and vertically and has width and height equal to 1/2 of the Device width.
 
 Comments:
