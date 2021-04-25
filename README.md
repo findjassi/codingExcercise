@@ -28,7 +28,7 @@ There is a console warning message on the Home screen component - try to fix thi
 Comments:
 
 ### TASK 04
-Add navigation from each Participant in the list of Participants to the Participant detail screen component. You will need to pass the `participant` object as a navigation param, so that the Participant detail screen component can access this data.
+Add navigation from each Participant in the list of Participants to the Participant detail screen component. You will need to pass each `participant` object, so that the Participant detail screen component can access this data.
 
 Comments:
 
