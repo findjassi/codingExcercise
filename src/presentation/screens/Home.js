@@ -16,9 +16,8 @@ const styles = StyleSheet.create({
   },
 });
 
-export const Home = () => {
+export const Home = ({navigation}) => {
   const {data} = useQuery(GET_PARTICIPANTS);
-
   /*TODO TASK 03*/
   return (
     <SafeAreaView edges={['bottom']} style={styles.container}>
@@ -28,7 +27,14 @@ export const Home = () => {
           data={data.characters.results}
           renderItem={({item}) => (
             /*TODO TASK 04*/
-            <TouchableOpacity style={styles.participant}>
+            <TouchableOpacity
+              style={styles.participant}
+              onPress={() => {
+                /* 1. Navigate to the Participant route with params */
+                navigation.navigate('Participant', {
+                  participantDetail: item,
+                });
+              }}>
               <Text>{item.name}</Text>
             </TouchableOpacity>
           )}

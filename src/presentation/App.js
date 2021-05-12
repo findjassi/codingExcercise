@@ -6,6 +6,7 @@ import Splash from './screens/Splash';
 import Home from './screens/Home';
 import Participant from './screens/Participant';
 import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client';
+import {View} from 'react-native';
 
 const client = new ApolloClient({
   uri: 'https://rickandmortyapi.com/graphql',
@@ -27,7 +28,7 @@ export default function App() {
           <Stack.Screen
             /*TODO TASK 01*/
             options={{animationEnabled: false}}
-            name="Home"
+            name="Participants"
             component={Home}
           />
           <Stack.Screen name="Participant" component={Participant} />

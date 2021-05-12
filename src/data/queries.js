@@ -5,6 +5,8 @@ export const GET_PARTICIPANTS = gql`
     characters {
       results {
         name
+        id
+        gender
       }
     }
   }
